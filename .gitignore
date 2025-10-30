@@ -1,0 +1,12 @@
+# Ignore OS‑specific files
+.DS_Store
+Thumbs.db
+
+# Ignore secret files you don’t want on GitHub
+*.pem
+*.key
+*.asc
+
+# Ignore backup / swap files
+*~
+*.swp
