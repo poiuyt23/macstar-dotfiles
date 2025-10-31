@@ -28,6 +28,7 @@
           wget
           neovim
           neofetch
+	  fastfetch
           btop
           curl
           lynx
@@ -44,6 +45,7 @@
 	  scdl
 	  ffmpeg
 	  git
+	  metasploit
     (python3.withPackages (python-pkgs: [
       python-pkgs.tkinter
       python-pkgs.qrcode
@@ -58,7 +60,7 @@
       	enable = true;
 	brews = [
 		"mas"
-		"http-server"
+#		"http-server"
 	];
 	casks = [
 		"discord"
@@ -81,7 +83,7 @@
 		"cleanupbuddy"
 		"ollama"
 		"firefox"
-		"metasploit"
+#		"metasploit"
 		"kitty"
 	];
       	masApps = {
