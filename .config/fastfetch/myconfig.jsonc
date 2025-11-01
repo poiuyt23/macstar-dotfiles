@@ -8,6 +8,10 @@
     },
     "modules": [
         {
+            "type": "custom",
+            "format": "\u001b[36m  \u001b[36m  \u001b[36m  \u001b[36m  \u001b[36m  \u001b[36m  \u001b[36m  \u001b[36m  \u001b[36m  \u001b[36m  \u001b[36m  \u001b[36m  \u001b[36m  \u001b[36m  \u001b[36m"
+        },
+        {
             "type": "host",
             "key": "╭─󰌢",
             "keyColor": "green"
@@ -168,6 +172,11 @@
             "type": "locale",
             "key": "╰─",
             "keyColor": "blue"
-        }
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[36m  \u001b[36m  \u001b[36m  \u001b[36m  \u001b[36m  \u001b[36m  \u001b[36m  \u001b[36m  \u001b[36m  \u001b[36m  \u001b[36m  \u001b[36m  \u001b[36m  \u001b[36m  \u001b[36m"
+        },
+
     ]
 }
