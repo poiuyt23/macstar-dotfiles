@@ -27,7 +27,6 @@
         [ mkalias 
           wget
           neovim
-          neofetch
 	  fastfetch
           btop
           curl
@@ -36,7 +35,6 @@
 	  fortune
 	  cowsay
 	  mc
-	  oh-my-zsh
 	  nmap
 	  curl
 	  thefuck
@@ -46,6 +44,8 @@
 	  ffmpeg
 	  git
 	  metasploit
+	  alacritty
+	  sl
     (python3.withPackages (python-pkgs: [
       python-pkgs.tkinter
       python-pkgs.qrcode

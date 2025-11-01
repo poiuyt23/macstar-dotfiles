@@ -4,4 +4,10 @@ alias config='/usr/bin/git --git-dir=$HOME/.macstar-dotfiles/ --work-tree=$HOME'
 config config --local status.showUntrackedFiles no
 # ----- end of dotfiles helper -----
 alias vim="nvim"
-fastfetch --config ~/.config/fastfetch/myconfig.jsonc
+
+
+# 1️⃣  Guard: make sure we’re in an interactive shell.
+if [[ $- == *i* && -t 1 ]]; then
+
+        command fastfetch -c .config/fastfetch/myconfig.jsonc
+fi
