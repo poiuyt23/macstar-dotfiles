@@ -44,8 +44,8 @@
 	  ffmpeg
 	  git
 	  metasploit
-	  alacritty
 	  sl
+    fish
     (python3.withPackages (python-pkgs: [
       python-pkgs.tkinter
       python-pkgs.qrcode
@@ -85,6 +85,9 @@
 		"firefox"
 #		"metasploit"
 		"kitty"
+    "fontbase"
+    "github"
+    "ente-auth"
 	];
       	masApps = {
       		"Windows App" = 1295203466;
@@ -99,8 +102,7 @@
   		"Pages" = 409201541;
   		"Proton Pass for Safari" = 6502835663;
   		"Xcode" = 497799835;
-		"Brotato:Premium" = 1668755109;
-		#"Ubiquiti Wifiman" = 1385561119;
+		  "Brotato:Premium" = 1668755109;
 
       	};
 	onActivation.cleanup = "zap";

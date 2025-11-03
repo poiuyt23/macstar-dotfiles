@@ -1,3 +1,38 @@
+# ignore everything!
+*
+
+# Common dotfiles
+!/.gitignore
+!/.zshrc
+!/.profile
+!/.gitconfig
+!/.vimrc
+
+# uncommon dotfiles
+flake.nix 
+
+
+# Add in config files
+# Configuration directories
+!/.config/
+!/.config/wttr/
+!/.config/wttr/**
+!/.config/fastfetch/
+!/.config/fastfetch/**
+!/.config/fish/
+!/.config/fish/**
+!/.config/conky/
+!/.config/conky/**
+!/.config/kitty/
+!/.config/kitty/**
+!/.config/nvim/
+!/.config/nvim/**
+!/.config/btop/
+!/.config/btop/**
+!/.config/iterm/
+!/.config/iterm/**
+
+
 # Ignore OS‑specific files
 .DS_Store
 Thumbs.db
