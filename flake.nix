@@ -88,6 +88,11 @@
     "fontbase"
     "github"
     "ente-auth"
+    "geany"
+    "git-it"
+    "gog-galaxy"
+
+
 	];
       	masApps = {
       		"Windows App" = 1295203466;
