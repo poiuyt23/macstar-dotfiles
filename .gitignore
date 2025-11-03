@@ -9,7 +9,7 @@
 !/.vimrc
 
 # uncommon dotfiles
-flake.nix 
+!/flake.nix 
 
 
 # Add in config files
@@ -33,15 +33,3 @@ flake.nix
 !/.config/iterm/**
 
 
-# Ignore OS‑specific files
-.DS_Store
-Thumbs.db
-
-# Ignore secret files you don’t want on GitHub
-*.pem
-*.key
-*.asc
-
-# Ignore backup / swap files
-*~
-*.swp
