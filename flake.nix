@@ -91,7 +91,7 @@
     "geany"
     "git-it"
     "gog-galaxy"
-
+    "porting-kit"
 
 	];
       	masApps = {
