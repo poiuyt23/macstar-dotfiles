@@ -15,8 +15,6 @@
 # Add in config files
 # Configuration directories
 !/.config/
-!/.config/wttr/
-!/.config/wttr/**
 !/.config/fastfetch/
 !/.config/fastfetch/**
 !/.config/fish/
