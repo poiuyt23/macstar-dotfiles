@@ -82,7 +82,7 @@
 		"retroarch"
 		"orion"
 		"cleanupbuddy"
-		"ollama"
+		"ollama-app"
 		"firefox"
 		"kitty"
     "fontbase"
@@ -94,6 +94,7 @@
     "grandperspective"
     "vimr"
     "hyper"
+    "icanhazshortcut"
 
 	];
       masApps = {
