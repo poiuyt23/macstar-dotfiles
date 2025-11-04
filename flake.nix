@@ -24,99 +24,99 @@
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
       environment.systemPackages = with pkgs;
-        [ mkalias 
-          wget
-          neovim
-	  fastfetch
-          btop
-          curl
-          lynx
-	  htop
-	  fortune
-	  cowsay
-	  mc
-	  nmap
-	  curl
-	  thefuck
-	  git
-	  gdu
-	  scdl
-	  ffmpeg
-	  git
-	  metasploit
-	  sl
-    fish
-    ddate
+    [ mkalias 
+     wget
+     neovim
+	   fastfetch
+     btop
+     curl
+     lynx
+	   htop
+	   fortune
+	   cowsay
+	   mc
+	   nmap
+	   curl
+	   thefuck
+	   git
+	   gdu
+	   scdl
+	   ffmpeg
+	   git
+	   metasploit
+	   sl
+     fish
+     ddate
     (python3.withPackages (python-pkgs: [
       python-pkgs.tkinter
       python-pkgs.qrcode
       python-pkgs.pillow
       python-pkgs.pyqrcode
       python-pkgs.pypng
-    ]))
+      ]))
 
-        ];
+    ];
 
-      homebrew = {
-      	enable = true;
-	brews = [
-		"mas"
-		"http-server"
-	];
-	casks = [
-		"discord"
-		"gimp"
-		"iina"
-		"iterm2"
-		"jordanbaird-ice"
-		"multitouch"
-		"onyx"
-		"pearcleaner"
-		"swift-quit"
-		"utm@beta"
-		"wireshark-app"
-		"libreoffice"
-		"brave-browser"
-		"steam"
-		"protonvpn"
-		"retroarch"
-		"orion"
-		"cleanupbuddy"
-		"ollama-app"
-		"firefox"
-		"kitty"
-    "fontbase"
-    "github"
-    "ente-auth"
-    "geany"
-    "git-it"
-    "porting-kit"
-    "grandperspective"
-    "vimr"
-    "hyper"
-    "icanhazshortcut"
+    homebrew = {
+      enable = true;
+	    brews = [
+		  "mas"
+		  "http-server"
+	  ];
+	  casks = [
+		  "discord"
+		  "gimp"
+		  "iina"
+		  "jordanbaird-ice"
+		  "multitouch"
+		  "onyx"
+		  "pearcleaner"
+		  "swift-quit"
+		  "utm@beta"
+		  "wireshark-app"
+		  "libreoffice"
+		  "brave-browser"
+		  "steam"
+		  "protonvpn"
+		  "retroarch"
+		  "orion"
+		  "cleanupbuddy"
+		  "ollama-app"
+		  "firefox"
+		  "kitty"
+      "fontbase"
+      "github"
+      "ente-auth"
+      "geany"
+      "git-it"
+      "porting-kit"
+      "grandperspective"
+      "vimr"
+      "icanhazshortcut"
+      "ghostty"
+      "amazon-q"
 
-	];
+	    ];
       masApps = {
-      "Windows App" = 1295203466;
-		  "Bitdefender Virus Scanner" = 500154009;
-  		"Developer" = 640199958;
-  		"GarageBand" = 682658836;
-  		"iMovie" = 408981434;
-  		"iStatistica Pro" = 1447778660;
-  		"Keynote" = 409183694;
-  		"Nitro" = 1591292532;
-  		"Numbers" = 409203825;
-  		"Pages" = 409201541;
-  		"Proton Pass for Safari" = 6502835663;
-  		"Xcode" = 497799835;
-		  "Brotato:Premium" = 1668755109;
-
-      	};
-	onActivation.cleanup = "zap";
+        "Windows App" = 1295203466;
+		    "Bitdefender Virus Scanner" = 500154009;
+  		  "Developer" = 640199958;
+  		  "GarageBand" = 682658836;
+  		  "iMovie" = 408981434;
+  		  "iStatistica Pro" = 1447778660;
+  		  "Keynote" = 409183694;
+  		  "Nitro" = 1591292532;
+  		  "Numbers" = 409203825;
+  		  "Pages" = 409201541;
+  		  "Proton Pass for Safari" = 6502835663;
+  		  "Xcode" = 497799835;
+		    "Brotato:Premium" = 1668755109;
+        "Cleaner One" = 1473079126;
       };
+	  onActivation.cleanup = "zap";
+    };
      
-     fonts.packages = [
+  fonts.packages = [
 	pkgs.nerd-fonts.jetbrains-mono
 	pkgs.nerd-fonts.open-dyslexic
 	];
