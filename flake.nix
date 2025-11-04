@@ -46,6 +46,7 @@
 	  metasploit
 	  sl
     fish
+    ddate
     (python3.withPackages (python-pkgs: [
       python-pkgs.tkinter
       python-pkgs.qrcode
@@ -60,7 +61,7 @@
       	enable = true;
 	brews = [
 		"mas"
-#		"http-server"
+		"http-server"
 	];
 	casks = [
 		"discord"
@@ -83,20 +84,21 @@
 		"cleanupbuddy"
 		"ollama"
 		"firefox"
-#		"metasploit"
 		"kitty"
     "fontbase"
     "github"
     "ente-auth"
     "geany"
     "git-it"
-    "gog-galaxy"
     "porting-kit"
+    "grandperspective"
+    "vimr"
+    "hyper"
 
 	];
-      	masApps = {
-      		"Windows App" = 1295203466;
-		"Bitdefender Virus Scanner" = 500154009;
+      masApps = {
+      "Windows App" = 1295203466;
+		  "Bitdefender Virus Scanner" = 500154009;
   		"Developer" = 640199958;
   		"GarageBand" = 682658836;
   		"iMovie" = 408981434;
