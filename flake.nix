@@ -92,8 +92,8 @@
       "porting-kit"
       "grandperspective"
       "vimr"
-      "icanhazshortcut"
       "ghostty"
+      "hyper"
       "amazon-q"
 
 	    ];
