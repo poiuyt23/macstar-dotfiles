@@ -1,6 +1,5 @@
 {
   description = "Macstar system Darwin Flake";
-
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-25.05-darwin";
     nix-darwin.url = "github:nix-darwin/nix-darwin/nix-darwin-25.05";
@@ -11,89 +10,89 @@
     homebrew-core = {
       url = "github:homebrew/homebrew-core";
       flake = false;
-    };
+     };
     homebrew-cask = {
       url = "github:homebrew/homebrew-cask";
       flake = false;
-      };
+    };
    };
 
   outputs = inputs@{ self, nix-darwin, nixpkgs, mac-app-util, home-manager, nix-homebrew, homebrew-core, homebrew-cask, ... }:
-  let
+    let
     configuration = { pkgs,config, python313Packages, ... }: {
-      # List packages installed in system profile. To search by name, run:
-      # $ nix-env -qaP | grep wget
+    # List packages installed in system profile. To search by name, run:
+    # $ nix-env -qaP | grep wget
       environment.systemPackages = with pkgs;
-    [ mkalias 
-     wget
-     neovim
-	   fastfetch
-     btop
-     curl
-     lynx
-	   htop
-	   fortune
-	   cowsay
-	   mc
-	   nmap
-	   curl
-	   thefuck
-	   git
-	   gdu
-	   scdl
-	   ffmpeg
-	   git
-	   metasploit
-	   sl
-     fish
-     ddate
-    (python3.withPackages (python-pkgs: [
-      python-pkgs.tkinter
-      python-pkgs.qrcode
-      python-pkgs.pillow
-      python-pkgs.pyqrcode
-      python-pkgs.pypng
-      ]))
-
-    ];
-
+      [ mkalias 
+        wget
+        neovim
+	      fastfetch
+        btop
+        curl
+        lynx
+	      htop
+	      fortune
+	      cowsay
+	      mc
+	      nmap
+	      curl
+	      thefuck
+	      git
+	      gdu
+	      scdl
+	      ffmpeg
+	      git
+	      metasploit
+	      sl
+        fish
+        ddate
+        (python3.withPackages (python-pkgs: 
+            [
+            python-pkgs.tkinter
+            python-pkgs.qrcode
+            python-pkgs.pillow
+            python-pkgs.pyqrcode
+            python-pkgs.pypng
+            ]
+          )
+        )
+      ];
     homebrew = {
       enable = true;
 	    brews = [
-		  "mas"
-		  "http-server"
-	  ];
-	  casks = [
-		  "discord"
-		  "gimp"
-		  "iina"
-		  "jordanbaird-ice"
-		  "multitouch"
-		  "onyx"
-		  "pearcleaner"
-		  "swift-quit"
-		  "utm@beta"
-		  "wireshark-app"
-		  "libreoffice"
-		  "brave-browser"
-		  "steam"
-		  "protonvpn"
-		  "retroarch"
-		  "orion"
-		  "cleanupbuddy"
-		  "ollama-app"
-		  "firefox"
-		  "kitty"
-      "fontbase"
-      "github"
-      "ente-auth"
-      "geany"
-      "git-it"
-      "porting-kit"
-      "grandperspective"
-      "vimr"
-      "ghostty"
-
+		    "mas"
+		    "http-server"
+	    ];
+	    casks = [
+		    "discord"
+		    "gimp"
+		    "iina"
+		    "jordanbaird-ice"
+		    "multitouch"
+		    "onyx"
+		    "pearcleaner"
+		    "swift-quit"
+		    "utm@beta"
+		    "wireshark-app"
+		    "libreoffice"
+		    "brave-browser"
+		    "steam"
+		    "protonvpn"
+		    "retroarch"
+		    "orion"
+		    "cleanupbuddy"
+		    "ollama-app"
+		    "firefox"
+		    "kitty"
+        "fontbase"
+        "github"
+        "ente-auth"
+        "geany"
+        "git-it"
+        "porting-kit"
+        "grandperspective"
+        "vimr"
+        "ghostty"
 	    ];
       masApps = {
         "Windows App" = 1295203466;
