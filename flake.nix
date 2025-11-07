@@ -93,6 +93,10 @@
         "grandperspective"
         "vimr"
         "ghostty"
+        "fleet"
+        "yubico-authenticator"
+        "zenmap"
+
 	    ];
       masApps = {
         "Windows App" = 1295203466;
