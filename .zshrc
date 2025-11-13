@@ -11,7 +11,7 @@ alias update='cd /etc/nix-darwin/; sudo nix flake update; sudo darwin-rebuild sw
 # 1️⃣  Guard: make sure we’re in an interactive shell.
 if [[ $- == *i* && -t 1 ]]; then
 
-        command fastfetch -c .config/fastfetch/myconfig.jsonc
+        command fastfetch -c ~/.config/fastfetch/myconfig.jsonc
 fi
 
 # Amazon Q post block. Keep at the bottom of this file.
