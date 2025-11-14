@@ -25,6 +25,8 @@
 !/.config/kitty/**
 !/.config/nvim/
 !/.config/nvim/**
+!/.config/nvim-kickstart/
+!/.config/nvim-kickstart/**
 !/.config/btop/
 !/.config/btop/**
 !/.config/iterm/
