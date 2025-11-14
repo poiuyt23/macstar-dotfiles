@@ -1,8 +1,10 @@
 {
 	description = "Macstar system Darwin Flake";
 	inputs = {
-		nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-25.05-darwin";
-		nix-darwin.url = "github:nix-darwin/nix-darwin/nix-darwin-25.05";
+		# Use `github:NixOS/nixpkgs/nixpkgs-25.05-darwin` to use Nixpkgs 25.05.
+		nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+		# Use `github:nix-darwin/nix-darwin/nix-darwin-25.05` to use Nixpkgs 25.05.
+		nix-darwin.url = "github:nix-darwin/nix-darwin/master";
 		nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
 		mac-app-util.url = "github:hraban/mac-app-util";	  
 		nix-homebrew.url = "github:zhaofengli/nix-homebrew";
@@ -36,7 +38,6 @@
 			mc
 			nmap
 			curl
-			thefuck
 			git
 			gdu
 			scdl
@@ -46,6 +47,7 @@
 			sl
 			fish
 			ddate
+      pay-respects
 			(python3.withPackages (python-pkgs: 
 				[
 					python-pkgs.tkinter
