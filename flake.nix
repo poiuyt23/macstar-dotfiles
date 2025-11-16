@@ -21,34 +21,32 @@
 	};
 	outputs = inputs@{ self, nix-darwin, nixpkgs, mac-app-util, home-manager, nix-homebrew, homebrew-core, homebrew-cask, ... }:
 	let
-	configuration = { pkgs,config, python313Packages, ... }: {
+	configuration = { pkgs,config, python314Packages, ... }: {
 		# List packages installed in system profile. To search by name, run:
 		# $ nix-env -qaP | grep wget
 		environment.systemPackages = with pkgs; [
-			mkalias 
-			wget
-			neovim
-			fastfetch
-			btop
-			curl
-			lynx
-			htop
-			fortune
+     	btop
 			cowsay
-			mc
-			nmap
 			curl
-			git
-			gdu
-			scdl
-			ffmpeg
-			git
-			metasploit
-			sl
-			fish
+			curl
 			ddate
-      pay-respects
-			(python3.withPackages (python-pkgs: 
+			fastfetch
+			ffmpeg
+			fortune
+			gdu
+			git
+			git
+			htop
+			lynx
+			mc
+			metasploit
+			mkalias 
+			neovim
+			nmap
+			scdl
+			sl
+			wget
+			(python3.withPackages (python-pkgs:
 				[
 					python-pkgs.tkinter
 					python-pkgs.qrcode
@@ -66,39 +64,39 @@
 				"http-server"
 			];
 			casks = [
+       	"brave-browser"
+				"cleanupbuddy"
+				"cog-app"
 				"discord"
+				"ente-auth"
+				"firefox"
+				"fleet"
+				"fontbase"
+				"geany"
+				"ghostty"
 				"gimp"
+				"git-it"
+				"github"
+				"grandperspective"
 				"iina"
 				"jordanbaird-ice"
-				"multitouch"
-				"onyx"
-				"pearcleaner"
-				"swift-quit"
-				"utm@beta"
-				"wireshark-app"
+				"kitty"
 				"libreoffice"
-				"brave-browser"
-				"steam"
+				"multitouch"
+				"ollama-app"
+				"onyx"
+				"orion"
+				"pearcleaner"
+				"porting-kit"
 				"protonvpn"
 				"retroarch"
-				"orion"
-				"cleanupbuddy"
-				"ollama-app"
-				"firefox"
-				"kitty"
-				"fontbase"
-				"github"
-				"ente-auth"
-				"geany"
-				"git-it"
-				"porting-kit"
-				"grandperspective"
+				"steam"
+				"swift-quit"
+				"utm@beta"
 				"vimr"
-				"ghostty"
-				"fleet"
+				"wireshark-app"
 				"yubico-authenticator"
 				"zenmap"
-				"cog-app"
 			];
 			masApps = {
 				"Windows App" = 1295203466;
