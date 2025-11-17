@@ -30,7 +30,7 @@
 			curl
 			curl
 			ddate
-      devenv
+			devenv
 			fastfetch
       #fish
 			ffmpeg
@@ -56,7 +56,7 @@
 				"http-server"
 			];
 			casks = [
-       	"brave-browser"
+				"brave-browser"
 				"cleanupbuddy"
 				"cog-app"
 				"discord"
@@ -80,6 +80,7 @@
 				"orion"
 				"pearcleaner"
 				"porting-kit"
+				"proton-mail-bridge"
 				"protonvpn"
 				"retroarch"
 				"steam"
@@ -91,10 +92,10 @@
 				"zenmap"
 			];
 			masApps = {
-				"Windows App" = 1295203466;
 				"Bitdefender Virus Scanner" = 500154009;
+				"Brotato:Premium" = 1668755109;
 				"Developer" = 640199958;
-        "Diagrams" = 1276248849;
+				"Diagrams" = 1276248849;
 				"GarageBand" = 682658836;
 				"iMovie" = 408981434;
 				"iStatistica Pro" = 1447778660;
@@ -103,11 +104,11 @@
 				"Numbers" = 409203825;
 				"Pages" = 409201541;
 				"Proton Pass for Safari" = 6502835663;
-				"Xcode" = 497799835;
-				"Brotato:Premium" = 1668755109;
-				"Steam Link" = 1246969117;
 				"Remote Desktop Sacanner" = 1605485521;
-			};
+				"Steam Link" = 1246969117;
+				"Windows App" = 1295203466;
+				"Xcode" = 497799835;
+				};
 			onActivation.cleanup = "zap";
 		};
 		fonts.packages = [
