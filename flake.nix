@@ -21,7 +21,7 @@
 	};
 	outputs = inputs@{ self, nix-darwin, nixpkgs, mac-app-util, home-manager, nix-homebrew, homebrew-core, homebrew-cask, ... }:
 	let
-	configuration = { pkgs,config, python314Packages, ... }: {
+	configuration = { pkgs,config,python313Packages, ... }: {
 		# List packages installed in system profile. To search by name, run:
 		# $ nix-env -qaP | grep wget
 		environment.systemPackages = with pkgs; [
@@ -30,7 +30,9 @@
 			curl
 			curl
 			ddate
+      devenv
 			fastfetch
+      #fish
 			ffmpeg
 			fortune
 			gdu
@@ -46,16 +48,6 @@
 			scdl
 			sl
 			wget
-			(python3.withPackages (python-pkgs:
-				[
-					python-pkgs.tkinter
-					python-pkgs.qrcode
-					python-pkgs.pillow
-					python-pkgs.pyqrcode
-					python-pkgs.pypng
-				]
-				)
-			)
 		];
 		homebrew = {
 			enable = true;
@@ -102,6 +94,7 @@
 				"Windows App" = 1295203466;
 				"Bitdefender Virus Scanner" = 500154009;
 				"Developer" = 640199958;
+        "Diagrams" = 1276248849;
 				"GarageBand" = 682658836;
 				"iMovie" = 408981434;
 				"iStatistica Pro" = 1447778660;
@@ -122,10 +115,9 @@
 			pkgs.nerd-fonts.open-dyslexic
 		];
 
-
 		# Necessary for using flakes on this system.
 		nix.settings.experimental-features	= [ "nix-command" "flakes" ];
-		
+	  nix.settings.download-buffer-size = 524288000;	
 		# Enable alternative shell support in nix-darwin.
 		# programs.fish.enable = true;
 
