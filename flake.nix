@@ -25,26 +25,28 @@
 		# List packages installed in system profile. To search by name, run:
 		# $ nix-env -qaP | grep wget
 		environment.systemPackages = with pkgs; [
-     	btop
+			btop
 			cowsay
 			curl
 			curl
 			ddate
 			devenv
 			fastfetch
-      #fish
+			#fish
 			ffmpeg
-			fortune
+			fortune-kind
 			gdu
 			git
 			git
 			htop
+			lolcat
 			lynx
 			mc
 			metasploit
 			mkalias 
 			neovim
 			nmap
+			pay-respects
 			scdl
 			sl
 			wget
@@ -71,11 +73,9 @@
 				"github"
 				"grandperspective"
 				"iina"
-				"jordanbaird-ice"
 				"kitty"
 				"libreoffice"
 				"multitouch"
-				"ollama-app"
 				"onyx"
 				"orion"
 				"pearcleaner"
@@ -92,21 +92,27 @@
 				"zenmap"
 			];
 			masApps = {
+        "Battery Monitor Pro" = 6451333638;
 				"Bitdefender Virus Scanner" = 500154009;
 				"Brotato:Premium" = 1668755109;
 				"Developer" = 640199958;
 				"Diagrams" = 1276248849;
+        "Drive Wiper Pro" = 6463743201;
 				"GarageBand" = 682658836;
 				"iMovie" = 408981434;
 				"iStatistica Pro" = 1447778660;
 				"Keynote" = 409183694;
+        "Magic Battery" = 1240063289;
 				"Nitro" = 1591292532;
 				"Numbers" = 409203825;
 				"Pages" = 409201541;
 				"Proton Pass for Safari" = 6502835663;
-				"Remote Desktop Sacanner" = 1605485521;
-				"Steam Link" = 1246969117;
-				"Windows App" = 1295203466;
+				"Remote Activity Monitor" = 6449398596;
+				"Remote Desktop Scanner Pro" = 6447154313;
+        "Steam Link" = 1246969117;
+				"System Toolkit Pro" = 6471391855;
+        "System Daskboard Pro" = 1672838414;
+        "Windows App" = 1295203466;
 				"Xcode" = 497799835;
 				};
 			onActivation.cleanup = "zap";
