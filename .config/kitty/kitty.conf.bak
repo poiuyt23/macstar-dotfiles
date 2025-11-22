@@ -20,7 +20,7 @@
 #: <https://sw.kovidgoyal.net/kitty/kittens/choose-fonts/#font-spec-
 #: syntax>.
 
-# font_size 11.0
+font_size 13.0
 
 #: Font size (in pts).
 
@@ -2931,3 +2931,8 @@ bold_font        auto
 italic_font      auto
 bold_italic_font auto
 # END_KITTY_FONTS
+
+# BEGIN_KITTY_THEME
+# Nord
+include current-theme.conf
+# END_KITTY_THEME

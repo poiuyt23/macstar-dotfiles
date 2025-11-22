@@ -9,7 +9,17 @@ alias nvimk='NVIM_APPNAME="nvim-kickstart" nvim'
 alias ssh="kitten ssh"
 eval "$(pay-respects zsh --alias)" # alias f to "pay-respects"
 
-# 1️⃣  Guard: make sure we’re in an interactive shell.
+setopt correct         # typo correction for commands
+setopt histignoredups  # don’t store duplicate entries in history
+setopt share_history   # keep history synced across multiple terminals
+
+export EDITOR=nvim # default editor
+export VISUAL=$EDITOR
+
+autoload -U compinit && compinit   # enable completion system
+zstyle ':completion:*' menu select # navigate completions with arrow keys
+
+#   Guard: make sure we’re in an interactive shell.
 if [[ $- == *i* && -t 1 ]]; then
 
         command fastfetch -c ~/.config/fastfetch/myconfig.jsonc

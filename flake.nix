@@ -54,8 +54,8 @@
 		homebrew = {
 			enable = true;
 			brews = [
-				"mas"
 				"http-server"
+				"mas"
 			];
 			casks = [
 				"brave-browser"
