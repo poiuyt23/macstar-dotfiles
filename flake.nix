@@ -45,6 +45,7 @@
 			metasploit
 			mkalias 
 			neovim
+      nix-search-cli
 			nmap
 			pay-respects
 			scdl
