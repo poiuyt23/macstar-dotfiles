@@ -32,5 +32,7 @@
 !/.config/gh/
 !/.config/gh/**
 
-
+# Stowed config files
+!/.dotfiles/
+!/.dotfiles/**
 

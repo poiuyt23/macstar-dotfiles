@@ -32,7 +32,7 @@
 			ddate
 			devenv
 			fastfetch
-			#fish
+			fish
 			ffmpeg
 			fortune-kind
 			gdu
@@ -50,6 +50,7 @@
 			pay-respects
 			scdl
 			sl
+			stow
 			wget
 		];
 		homebrew = {
@@ -153,15 +154,6 @@
 				modules = [ 
 				configuration
 				mac-app-util.darwinModules.default 
-				home-manager.darwinModules.home-manager
-				(
-					{ pkgs, config, inputs, ... }: 
-					{
-						home-manager.sharedModules = [
-							mac-app-util.homeManagerModules.default
-						];
-					}
-				)
 				nix-homebrew.darwinModules.nix-homebrew {
 				nix-homebrew = {
 					# Install Homebrew under the default prefix

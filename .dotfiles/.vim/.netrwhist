@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/Users/poiuyt/.config/fish'
+let g:netrw_dirhist_3='/Users/poiuyt/.config/fish/conf.d'
+let g:netrw_dirhist_2='/Users/poiuyt/.ollama/models'
+let g:netrw_dirhist_1='/private/etc/nix-darwin'
