@@ -51,6 +51,7 @@
 			scdl
 			sl
 			stow
+			tree
 			wget
 		];
 		homebrew = {

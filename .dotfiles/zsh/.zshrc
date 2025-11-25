@@ -7,6 +7,7 @@ alias vim="nvim"
 alias update='cd /etc/nix-darwin/; sudo nix flake update; sudo darwin-rebuild switch; cd ~'
 # alias nvimk='NVIM_APPNAME="nvim-kickstart" nvim'
 alias ssh="kitten ssh"
+alias develop="nix shell"
 eval "$(pay-respects zsh --alias)" # alias f to "pay-respects"
 
 setopt correct         # typo correction for commands
