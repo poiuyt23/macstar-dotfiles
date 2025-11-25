@@ -17,7 +17,7 @@ in pkgs.mkShellNoCC {
 
 
   shellHook = ''
-  source ~/.zshrc
+#  source ~/.zshrc
   cd ~/build/
   '';
  }

@@ -7,11 +7,10 @@
 !/.profile
 !/.gitconfig
 !/.vimrc
-!/shell.nix
 
 # uncommon nondotfiles
 !/flake.nix 
-
+!/shell.nix
 
 # Add in config files
 # Configuration directories
@@ -30,7 +29,8 @@
 !/.config/nvim-kickstart/**
 !/.config/btop/
 !/.config/btop/**
-!/.config/iterm/
-!/.config/iterm/**
+!/.config/gh/
+!/.config/gh/**
+
 
 

@@ -36,6 +36,7 @@
 			ffmpeg
 			fortune-kind
 			gdu
+			gh
 			git
 			git
 			htop
@@ -45,7 +46,6 @@
 			metasploit
 			mkalias 
 			neovim
-      nix-search-cli
 			nmap
 			pay-respects
 			scdl
