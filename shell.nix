@@ -17,7 +17,7 @@ in pkgs.mkShellNoCC {
 
 
   shellHook = ''
-#  source ~/.zshrc
   pushd ~/build/
+  export NIX_BUILD_SHELL=/bin/zsh
   '';
- }
+}

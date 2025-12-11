@@ -56,6 +56,11 @@
 		];
 		homebrew = {
 			enable = true;
+			onActivation = {
+				autoUpdate = true;
+				cleanup = "zap";
+				upgrade = true;
+			};
 			brews = [
 				"http-server"
 				"mas"
@@ -69,7 +74,6 @@
 				"firefox"
 				"fleet"
 				"fontbase"
-				"geany"
 				"ghostty"
 				"gimp"
 				"git-it"
@@ -118,7 +122,7 @@
         			"Windows App" = 1295203466;
 				"Xcode" = 497799835;
 				};
-			onActivation.cleanup = "zap";
+					#onActivation.cleanup = "zap";
 		};
 		fonts.packages = [
 			pkgs.nerd-fonts.jetbrains-mono
