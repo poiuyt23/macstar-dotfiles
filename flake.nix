@@ -103,26 +103,25 @@
 				"Bitdefender Virus Scanner" = 500154009;
 				"Brotato:Premium" = 1668755109;
 				"Developer" = 640199958;
-				"Diagrams" = 1276248849;
-        			"Drive Wiper Pro" = 6463743201;
+				"Diagrams" = 1276248849; 		
+				"Drive Wiper Pro" = 6463743201;
 				"GarageBand" = 682658836;
 				"iMovie" = 408981434;
 				"iStatistica Pro" = 1447778660;
 				"Keynote" = 409183694;
-        			"Magic Battery" = 1240063289;
+				"Magic Battery" = 1240063289;
 				"Nitro" = 1591292532;
 				"Numbers" = 409203825;
 				"Pages" = 409201541;
 				"Proton Pass for Safari" = 6502835663;
 				"Remote Activity Monitor" = 6449398596;
 				"Remote Desktop Scanner Pro" = 6447154313;
-        			"Steam Link" = 1246969117;
+				"Steam Link" = 1246969117;
 				"System Toolkit Pro" = 6471391855;
-        			"System Daskboard Pro" = 1672838414;
-        			"Windows App" = 1295203466;
+				"System Daskboard Pro" = 1672838414;
+				"Windows App" = 1295203466;
 				"Xcode" = 497799835;
 				};
-					#onActivation.cleanup = "zap";
 		};
 		fonts.packages = [
 			pkgs.nerd-fonts.jetbrains-mono
