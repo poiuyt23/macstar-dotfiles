@@ -99,7 +99,7 @@
 				"zenmap"
 			];
 			masApps = {
-        			"Battery Monitor Pro" = 6451333638;
+				"Battery Monitor Pro" = 6451333638;
 				"Bitdefender Virus Scanner" = 500154009;
 				"Brotato:Premium" = 1668755109;
 				"Developer" = 640199958;
