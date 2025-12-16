@@ -46,6 +46,7 @@
 			metasploit
 			mkalias 
 			neovim
+			nix-search-cli
 			nmap
 			pay-respects
 			scdl
@@ -64,6 +65,7 @@
 			brews = [
 				"http-server"
 				"mas"
+				"telnet"
 			];
 			casks = [
 				"brave-browser"
