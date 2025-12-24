@@ -28,7 +28,6 @@
 			btop
 			cowsay
 			curl
-			curl
 			ddate
 			devenv
 			fastfetch
@@ -73,7 +72,6 @@
 				"cog-app"
 				"discord"
 				"ente-auth"
-				"firefox"
 				"fleet"
 				"fontbase"
 				"ghostty"
@@ -85,6 +83,7 @@
 				"kitty"
 				"libreoffice"
 				"multitouch"
+				"ollama-app"
 				"onyx"
 				"orion"
 				"pearcleaner"
