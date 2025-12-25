@@ -64,6 +64,7 @@
 			brews = [
 				"http-server"
 				"mas"
+				"snitch"
 				"telnet"
 			];
 			casks = [

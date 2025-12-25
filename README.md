@@ -25,5 +25,8 @@ hard linked to /etc/nix-darwin/flake.nix</p>
 <p style="line-height: 100%; margin-bottom: 0cm">In short if you have
 a working nix-darwin setup these files will make your mac look like
 mine. Good Luck.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">   -dotfiles are now
+stowed. Run "ls | xargs stow -nvv" from .dotfiles to see how the 
+symlinks would be created.  </p>
 </body>
 </html>
