@@ -14,9 +14,6 @@ managing GUI apps
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	-nerdfonts 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm">	-mas for managing
-apple store apps 
-</p>
 <p style="line-height: 100%; margin-bottom: 0cm">	-.gitignore
 included for managing content 
 </p>
