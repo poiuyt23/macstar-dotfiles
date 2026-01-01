@@ -40,4 +40,4 @@ set updatetime=300        " Faster swap file writes / CursorHold events
 set lazyredraw            " Redraw only when needed (speedier macros)
 
 "color tokyonight
-color nord
+color tokyonight
