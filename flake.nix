@@ -82,7 +82,7 @@
 				"iina"
 				"kitty"
 				"libreoffice"
-				"librewolf"
+				"mullvad-browser"
 				"multitouch"
 				"ollama-app"
 				"onyx"
