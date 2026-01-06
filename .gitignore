@@ -12,23 +12,23 @@
 
 # Add in config files
 # Configuration directories
-!/.config/
-!/.config/fastfetch/
-!/.config/fastfetch/**
-!/.config/fish/
-!/.config/fish/**
-!/.config/conky/
-!/.config/conky/**
-!/.config/kitty/
-!/.config/kitty/**
-!/.config/nvim/
-!/.config/nvim/**
-!/.config/nvim-kickstart/
-!/.config/nvim-kickstart/**
-!/.config/btop/
-!/.config/btop/**
-!/.config/gh/
-!/.config/gh/**
+#!/.config/
+#!/.config/fastfetch/
+#!/.config/fastfetch/**
+#!/.config/fish/
+#!/.config/fish/**
+#!/.config/conky/
+#!/.config/conky/**
+#!/.config/kitty/
+#!/.config/kitty/**
+#!/.config/nvim/
+#!/.config/nvim/**
+#!/.config/nvim-kickstart/
+#!/.config/nvim-kickstart/**
+#!/.config/btop/
+#!/.config/btop/**
+#!/.config/gh/
+#!/.config/gh/**
 
 # Stowed config files
 !/.dotfiles/
