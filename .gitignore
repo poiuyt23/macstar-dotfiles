@@ -3,10 +3,8 @@
 
 # Common dotfiles
 !/.gitignore
-!/.zshrc
 !/.profile
 !/.gitconfig
-!/.vimrc
 
 # uncommon nondotfiles
 !/flake.nix 
