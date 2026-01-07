@@ -33,5 +33,3 @@
 # Stowed config files
 !/.dotfiles/
 !/.dotfiles/**
-!/.dotfiles/nvim/.config
-!/.dotfiles/nvim/.config/**
