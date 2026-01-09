@@ -37,7 +37,7 @@ if s:configuration.style ==# 'night'
         \ 'bg1':        ['#232433',   '236',  'DarkGrey'],
         \ 'bg2':        ['#2a2b3d',   '236',  'DarkGrey'],
         \ 'bg3':        ['#32344a',   '237',  'DarkGrey'],
-        \ 'bg4':        ['#444B6A',   '237',  'Grey'],
+        \ 'bg4':        ['#3b3d57',   '237',  'Grey'],
         \ 'bg_red':     ['#ff7a93',   '203',  'Red'],
         \ 'diff_red':   ['#803d49',   '52',   'DarkRed'],
         \ 'bg_green':   ['#b9f27c',   '107',  'Green'],
