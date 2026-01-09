@@ -37,7 +37,7 @@ if s:configuration.style ==# 'night'
         \ 'bg1':        ['#232433',   '236',  'DarkGrey'],
         \ 'bg2':        ['#2a2b3d',   '236',  'DarkGrey'],
         \ 'bg3':        ['#32344a',   '237',  'DarkGrey'],
-        \ 'bg4':        ['#3b3d57',   '237',  'Grey'],
+        \ 'bg4':        ['#444B6A',   '237',  'Grey'],
         \ 'bg_red':     ['#ff7a93',   '203',  'Red'],
         \ 'diff_red':   ['#803d49',   '52',   'DarkRed'],
         \ 'bg_green':   ['#b9f27c',   '107',  'Green'],
@@ -51,7 +51,7 @@ if s:configuration.style ==# 'night'
         \ 'green':      ['#9ECE6A',   '107',  'Green'],
         \ 'blue':       ['#7AA2F7',   '110',  'Blue'],
         \ 'purple':     ['#ad8ee6',   '176',  'Magenta'],
-        \ 'grey':       ['#444B6A',   '246',  'LightGrey'],
+        \ 'grey':       ['#5E6792',   '246',  'LightGrey'],
         \ 'none':       ['NONE',      'NONE', 'NONE']
         \ }
 elseif s:configuration.style ==# 'storm'

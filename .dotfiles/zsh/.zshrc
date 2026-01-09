@@ -3,7 +3,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.macstar-dotfiles --work-tree=$HOME'
 # Make sure Git ignores the .dotfiles folder itself
 config config --local status.showUntrackedFiles no
 # ----- end of dotfiles helper -----
-alias vim="nvim"
+#alias vim="nvim"
 alias update='pushd /etc/nix-darwin/; sudo nix flake update; sudo darwin-rebuild switch; sudo mas update; popd'
 # alias nvimk='NVIM_APPNAME="nvim-kickstart" nvim'
 alias ssh="kitten ssh"
