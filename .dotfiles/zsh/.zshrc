@@ -2,6 +2,7 @@
 alias config='/usr/bin/git --git-dir=$HOME/.macstar-dotfiles --work-tree=$HOME'
 # Make sure Git ignores the .dotfiles folder itself
 config config --local status.showUntrackedFiles no
+export GITHUB_TOKEN=$(cat ~/.ssh/first_token_github)
 # ----- end of dotfiles helper -----
 #alias vim="nvim"
 alias update='pushd /etc/nix-darwin/; sudo nix flake update; sudo darwin-rebuild switch; sudo mas update; popd'
