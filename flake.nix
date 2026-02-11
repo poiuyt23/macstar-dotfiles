@@ -92,6 +92,7 @@
 				"proton-mail-bridge"
 				"protonvpn"
 				"retroarch"
+                "rwts-pdfwriter"
 				"steam"
 				"swift-quit"
 				"utm@beta"
