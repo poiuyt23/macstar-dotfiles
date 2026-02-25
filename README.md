@@ -9,7 +9,7 @@ implementation and flake.nix written for nix-darwin.<br/>
 	-Python
 and python modules are included in shell.nix <br/>
 </p>
-    -shell.nix now points to unstable as in should </br>
+    -shell.nix now points to unstable as in should </br></br>
 <p style="line-height: 100%; margin-bottom: 0cm">	-Homebrew installed
 managing GUI apps 
 </p>
