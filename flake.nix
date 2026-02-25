@@ -44,7 +44,6 @@
 			mc
 			metasploit
 			mkalias 
-			neovim
 			nix-search-cli
 			nmap
 			pay-respects
@@ -84,7 +83,6 @@
 				"libreoffice"
 				"mullvad-browser"
 				"multitouch"
-				"ollama-app"
 				"onyx"
 				"orion"
 				"pearcleaner"
