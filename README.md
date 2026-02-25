@@ -7,8 +7,9 @@
 dotfiles for my computer macstar. Features a working flake
 implementation and flake.nix written for nix-darwin.<br/>
 	-Python
-and python modules are included 
+and python modules are included in shell.nix <br/>
 </p>
+    -shell.nix now points to unstable as in should </br>
 <p style="line-height: 100%; margin-bottom: 0cm">	-Homebrew installed
 managing GUI apps 
 </p>
