@@ -67,7 +67,7 @@
 				"telnet"
 			];
 			casks = [
-				"arc"
+			    "android-studio"	
 				"cleanupbuddy"
 				"discord"
 				"ente-auth"
