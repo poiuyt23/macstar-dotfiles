@@ -4,10 +4,11 @@ alias config='/usr/bin/git --git-dir=$HOME/.macstar-dotfiles --work-tree=$HOME'
 config config --local status.showUntrackedFiles no
 export GITHUB_TOKEN=$(cat ~/.ssh/first_token_github)
 # ----- end of dotfiles helper -----
-#alias vim="nvim"
-alias update='pushd /etc/nix-darwin/; sudo nix flake update; sudo darwin-rebuild switch; sudo mas update; popd'
-# alias nvimk='NVIM_APPNAME="nvim-kickstart" nvim'
+# WHD commented out 6/25/26, error in nix-darwin cask updater #alias update='pushd /etc/nix-darwin/; sudo nix flake update; sudo darwin-rebuild switch; sudo mas update; popd'
 alias ssh="kitten ssh"
+# WHD below 1 line change to run brew updates - inefficient but works after brew bundle change 4/26/26
+alias update='pushd /etc/nix-darwin/; sudo nix flake update; sudo darwin-rebuild switch; sudo mas update; popd '
+alias ddate=~/Applications/ddate
 eval "$(pay-respects zsh --alias)" # alias f to "pay-respects"
 
 setopt correct         # typo correction for commands
@@ -15,7 +16,7 @@ setopt histignoredups  # don’t store duplicate entries in history
 setopt share_history   # keep history synced across multiple terminals
 #setopt PROMPT_SUBST
 
-export EDITOR=nvim # default editor
+export EDITOR=vim # default editor
 export VISUAL=$EDITOR
 
 autoload -U compinit && compinit && # enable completion system
@@ -75,6 +76,6 @@ RPROMPT="%F{cyan}%?%f"
 #   Guard: make sure we’re in an interactive shell.
 if [[ $- == *i* && -t 1 ]]; then
         command fastfetch -c ~/.config/fastfetch/myconfig.jsonc # | lolcat #lol
-	command ddate | lolcat
+	command ~/Applications/ddate | lolcat
 fi
 

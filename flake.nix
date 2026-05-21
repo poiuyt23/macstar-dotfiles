@@ -1,14 +1,11 @@
 {
 	description = "Macstar system Darwin Flake";
 	inputs = {
-		# Use `github:NixOS/nixpkgs/nixpkgs-25.05-darwin` to use Nixpkgs 25.05.
 		nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-		# Use `github:nix-darwin/nix-darwin/nix-darwin-25.05` to use Nixpkgs 25.05.
 		nix-darwin.url = "github:nix-darwin/nix-darwin/master";
 		nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
 		mac-app-util.url = "github:hraban/mac-app-util";	  
 		nix-homebrew.url = "github:zhaofengli/nix-homebrew";
-		home-manager.url = "github:nix-community/home-manager";
 		# Optional: Declarative tap management
 		homebrew-core = {
 			url = "github:homebrew/homebrew-core";
@@ -16,10 +13,10 @@
 		};
 		homebrew-cask = {
 			url = "github:homebrew/homebrew-cask";
-			flake = false;
+		    flake = false;
 		};
 	};
-	outputs = inputs@{ self, nix-darwin, nixpkgs, mac-app-util, home-manager, nix-homebrew, homebrew-core, homebrew-cask, ... }:
+	outputs = inputs@{ self, nix-darwin, nixpkgs, mac-app-util, nix-homebrew, homebrew-core, homebrew-cask, ... }:
 	let
 	configuration = { pkgs,config,python313Packages, ... }: {
 		# List packages installed in system profile. To search by name, run:
@@ -59,19 +56,19 @@
 				autoUpdate = true;
 				cleanup = "zap";
 				upgrade = true;
-			};
+			    };
 			brews = [
 				"http-server"
+                "lsusb"
 				"mas"
 				"snitch"
 				"telnet"
 			];
-			casks = [
-			    "android-studio"	
-				"cleanupbuddy"
-				"discord"
+/* Comment out casks section 4/26/26 error causing update crash during "brew bundle" part of update		*/
+            casks = [
+                "cleanupbuddy"
+                "discord"
 				"ente-auth"
-				"fontbase"
 				"ghostty"
 				"gimp"
 				"git-it"
@@ -97,8 +94,9 @@
 				"vimr"
 				"wireshark-app"
 				"yubico-authenticator"
-				"zenmap"
-			];
+				"zenmap"  
+			];     
+# 4/26/26 end of cask commenbt out seen above */
 			masApps = {
 				"Battery Monitor Pro" = 6451333638;
 				"Bitdefender Virus Scanner" = 500154009;
