@@ -18,7 +18,7 @@
 	};
 	outputs = inputs@{ self, nix-darwin, nixpkgs, mac-app-util, nix-homebrew, homebrew-core, homebrew-cask, ... }:
 	let
-	configuration = { pkgs,config,python313Packages, ... }: {
+	configuration = { pkgs,config,python314Packages, ... }: {
 		# List packages installed in system profile. To search by name, run:
 		# $ nix-env -qaP | grep wget
 		environment.systemPackages = with pkgs; [
@@ -34,7 +34,6 @@
 			gdu
 			gh
 			git
-			git
 			htop
 			lolcat
 			lynx
@@ -42,7 +41,6 @@
 			metasploit
 			mkalias 
 			nix-search-cli
-			nmap
 			pay-respects
 			scdl
 			sl
@@ -60,30 +58,24 @@
 			brews = [
 				"http-server"
                 "lsusb"
-				"mas"
 				"snitch"
 				"telnet"
 			];
 /* Comment out casks section 4/26/26 error causing update crash during "brew bundle" part of update		*/
             casks = [
                 "cleanupbuddy"
+                "daisydisk"
                 "discord"
 				"ente-auth"
 				"ghostty"
 				"gimp"
-				"git-it"
 				"github"
 				"grandperspective"
-				"helium-browser"
-				"iina"
 				"kitty"
-				"libreoffice"
 				"mullvad-browser"
 				"multitouch"
 				"onyx"
 				"orion"
-				"pearcleaner"
-				"porting-kit"
 				"proton-mail-bridge"
 				"protonvpn"
 				"retroarch"
@@ -91,36 +83,12 @@
 				"steam"
 				"swift-quit"
 				"utm@beta"
-				"vimr"
 				"wireshark-app"
 				"yubico-authenticator"
+                "zed"
 				"zenmap"  
 			];     
 # 4/26/26 end of cask commenbt out seen above */
-			masApps = {
-				"Battery Monitor Pro" = 6451333638;
-				"Bitdefender Virus Scanner" = 500154009;
-				"Brotato:Premium" = 1668755109;
-				"Developer" = 640199958;
-				"Diagrams" = 1276248849; 		
-				"Drive Wiper Pro" = 6463743201;
-				"GarageBand" = 682658836;
-				"iMovie" = 408981434;
-				"iStatistica Pro" = 1447778660;
-				"Keynote" = 409183694;
-				"Magic Battery" = 1240063289;
-				"Nitro" = 1591292532;
-				"Numbers" = 409203825;
-				"Pages" = 409201541;
-				"Proton Pass for Safari" = 6502835663;
-				"Remote Activity Monitor" = 6449398596;
-				"Remote Desktop Scanner Pro" = 6447154313;
-				"Steam Link" = 1246969117;
-				"System Toolkit Pro" = 6471391855;
-				"System Daskboard Pro" = 1672838414;
-				"Windows App" = 1295203466;
-				"Xcode" = 497799835;
-				};
 		};
 		fonts.packages = [
 			pkgs.nerd-fonts.jetbrains-mono

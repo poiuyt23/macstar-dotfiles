@@ -7,7 +7,7 @@ export GITHUB_TOKEN=$(cat ~/.ssh/first_token_github)
 # WHD commented out 6/25/26, error in nix-darwin cask updater #alias update='pushd /etc/nix-darwin/; sudo nix flake update; sudo darwin-rebuild switch; sudo mas update; popd'
 alias ssh="kitten ssh"
 # WHD below 1 line change to run brew updates - inefficient but works after brew bundle change 4/26/26
-alias update='pushd /etc/nix-darwin/; sudo nix flake update; sudo darwin-rebuild switch; sudo mas update; popd '
+alias update='pushd /etc/nix-darwin/; sudo nix flake update; sudo darwin-rebuild switch;  popd '
 alias ddate=~/Applications/ddate
 eval "$(pay-respects zsh --alias)" # alias f to "pay-respects"
 
